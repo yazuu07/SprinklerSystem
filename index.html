@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Watering System — Dashboard</title>
+  <link rel="stylesheet" href="styles/dashboard_styles.css">
+</head>
+<body class="fredoka">
+  <div class="container">
+    <header class="top" role="banner">
+      <div class="brand">
+        <div class="logo" aria-hidden>
+          <!-- droplet icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-droplets text-blue-500" aria-hidden="true"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"></path><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"></path></svg>
+        </div>
+        <div>
+          <div class="title">Smart Watering System</div>
+          <div class="welcome-text">Welcome back, User!</div>
+        </div>
+      </div>
+      <div class="actions">
+        <div class="profile"><a href="profile.html" style="text-decoration: none; color: #797473;" ><sub><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></sub> Profile</a></div>
+       <div class="logout"><a href="login.html" style="color: red; text-decoration: none;"><sub><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-out" aria-hidden="true"><path d="m16 17 5-5-5-5"></path><path d="M21 12H9"></path><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path></svg></sub> Logout</a></div>
+      </div>
+    </header><br>
+
+    <div class="container white-container">
+      <div class="tabs" role="tablist" aria-label="Main tabs">
+        <button class="tab active" role="tab" aria-selected="true"><sub><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-droplets" aria-hidden="true"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"></path><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"></path></svg></sub> Dashboard</button>
+        <button class="tab" onclick="location.href='schedule.html'"><sub><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg></sub> Schedule</button>
+        <button class="tab" onclick="location.href='history.html'"><sub><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg></sub> History</button>
+        <button class="tab" role="tab" onclick="location.href='settings.html'"><sub><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings" aria-hidden="true"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path><circle cx="12" cy="12" r="3"></circle></svg></sub> Settings</button>
+      </div>
+    </div><br>
+    
+
+    <main>
+      <section class="grid" aria-label="dashboard grid">
+        <!-- small metrics -->
+        <div class="card ">
+          <div class="metric-title">Soil Moisture</div>
+          <div class="metric-value" id="moistureVal">68.7%</div>
+          <div style="margin-top:8px"><span class="pill success">Optimal</span></div>
+        </div>
+
+        <div class="card">
+          <div class="metric-title">Fertilizer Level</div>
+          <div class="metric-value" id="fertVal">12.1%</div>
+          <div style="margin-top:8px"><span class="pill critical">Critical - Needs Fertilizer</span></div>
+        </div>
+
+        <div class="card">
+          <div class="metric-title">System Status</div>
+          <div class="small">Standby</div>
+          <div style="margin-top:8px"><span class="pill">Ready</span></div>
+        </div>
+
+        <div class="card">
+          <div class="metric-title">Auto Mode</div>
+          <div class="small">Enabled</div>
+          <div style="margin-top:8px"><button id="autoToggle" class="pill" style="border:0;background:linear-gradient(90deg,#eef6ff,#f8fbff);cursor:pointer">Disable</button></div>
+        </div>
+
+        <!-- progress bars -->
+        <div class="card wide">
+          <div class="metric-title">Soil Moisture Level</div>
+          <div class="progress-wrap" style="margin-top:12px">
+            <div class="progress" aria-hidden><i id="moistBar"></i></div>
+            <div class="progress-labels"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div>
+          </div>
+        </div>
+
+        <div class="card wide">
+          <div class="metric-title">Fertilizer Concentration</div>
+          <div class="progress-wrap" style="margin-top:12px">
+            <div class="progress red" aria-hidden><i id="fertBar"></i></div>
+            <div class="progress-labels"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div>
+          </div>
+        </div>
+
+        <!-- soil texture -->
+        <div class="card xwide">
+          <div class="soil-card">
+            <div class="soil-text">
+              <div class="metric-title">Soil Texture Analysis</div>
+              <div class="small" style="margin-top:8px">Current Condition:<br><strong>Well Hydrated</strong></div>
+            </div>
+            <div style="width:90px;height:90px;border-radius:10px;background:linear-gradient(135deg,#bba599,#7b5a50);display:flex;align-items:center;justify-content:center;color:#ffffff7f;font-size:22px"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-droplets text-blue-500" aria-hidden="true"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"></path><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"></path></svg></div>
+          </div>
+        </div>
+
+        <!-- manual controls -->
+        <div class="card xwide">
+   
+            <div class="metric-title">Manual Controls</div>
+            <div class="small">Select Liquid Type</div>
+            <div style="margin-top:12px" class="segmented" role="tablist">
+              <button id="selWater" class="active"><sub><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-droplets text-blue-500" aria-hidden="true"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"></path><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"></path></svg></sub> Water</button>
+              <button id="selFert"><sub><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-droplets text-blue-500" aria-hidden="true"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"></path><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"></path></svg></sub> Fertilizer</button>
+            </div>
+            <button id="startBtn" class="start-btn">Start Watering</button>
+            <div style="margin-top:12px;font-size:13px;color:var(--muted)">
+              <div>Last watered: <span id="lastWater">11/19/2025, 4:24:07 AM</span></div>
+              <div>Last fertilized: <span id="lastFert">11/18/2025, 4:22:31 AM</span></div>
+            </div>
+   
+        </div>
+
+        <!-- hardware integration -->
+        <div class="card xwide">
+          <div class="hw">
+            <div style="font-weight:700;margin-bottom:8px">Hardware Integration</div>
+            <div class="small">To connect your C++ watering system, configure it to send/receive data via HTTP requests:</div>
+            <pre>POST /api/moisture - Send moisture readings
+GET /api/watering-status - Check if watering should be active
+POST /api/watering-command - Receive watering commands</pre>
+          </div>
+        </div>
+
+      </section>
+    </main>
+  </div>
+
+  // Reference buttons
+    const selWater = document.getElementById('selWater');
+    const selFert = document.getElementById('selFert');
+    const startBtn = document.getElementById('startBtn');
+    
+    let selected = 'water'; // default selection
+    
+    function updateStartBtnColor() {
+        if (selected === 'water') {
+            startBtn.style.background = '#1e6ef5'; // water
+        } else if (selected === 'fert') {
+            startBtn.style.background = '#10b981'; // fert
+        }
+    }
+    
+    // Set initial color
+    updateStartBtnColor();
+    
+    // Event listeners for segmented buttons
+    selWater.addEventListener('click', () => {
+        selected = 'water';
+        selWater.classList.add('active');
+        selFert.classList.remove('active');
+        updateStartBtnColor();
+    });
+    
+    selFert.addEventListener('click', () => {
+        selected = 'fert';
+        selFert.classList.add('active');
+        selWater.classList.remove('active');
+        updateStartBtnColor();
+    });
+    
+    // Keep the existing Start Watering functionality
+    startBtn.addEventListener('click', () => {
+        startBtn.textContent = 'Starting...';
+        startBtn.disabled = true;
+    
+        setTimeout(() => {
+            const now = new Date();
+            document.getElementById('lastWater').textContent = now.toLocaleString();
+    
+            // Update moisture/fertilizer values visually
+            const moistureValEl = document.getElementById('moistureVal');
+            const fertValEl = document.getElementById('fertVal');
+            const moBar = document.getElementById('moistBar');
+            const fBar = document.getElementById('fertBar');
+    
+            let moisture = parseFloat(moistureValEl.textContent);
+            let fert = parseFloat(fertValEl.textContent);
+    
+            if (selected === 'water') {
+                let newMo = Math.min(100, Math.round(moisture + 8));
+                moistureValEl.textContent = newMo + '%';
+                moBar.style.width = newMo + '%';
+            } else if (selected === 'fert') {
+                let newF = Math.min(100, Math.round(fert + 28));
+                fertValEl.textContent = newF + '%';
+                fBar.style.width = newF + '%';
+                document.getElementById('lastFert').textContent = now.toLocaleString();
+            }
+    
+            startBtn.textContent = 'Start Watering';
+            startBtn.disabled = false;
+        }, 1400);
+    });
+    </script>
+</body>
+<script src="script.js"></script>
+</html>
