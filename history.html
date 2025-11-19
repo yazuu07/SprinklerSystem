@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smart Watering System — History</title>
+  <link rel="stylesheet" href="styles/dashboard_styles.css">
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body class="fredoka">
+  <div class="container">
+    <header class="top" role="banner">
+      <div class="brand">
+        <div class="logo" aria-hidden>
+          <!-- droplet icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-droplets text-blue-500" aria-hidden="true"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"></path><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"></path></svg>
+        </div>
+        <div>
+          <div class="title">Smart Watering System</div>
+          <div class="welcome-text">Welcome back, User!</div>
+        </div>
+      </div>
+      <div class="actions">
+        <div class="profile"><a href="profile.html" style="text-decoration: none; color: #797473;" ><sub><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></sub> Profile</a></div>
+       <div class="logout"><a href="login.html" style="color: red; text-decoration: none;"><sub><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-out" aria-hidden="true"><path d="m16 17 5-5-5-5"></path><path d="M21 12H9"></path><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path></svg></sub> Logout</a></div>
+      </div>
+    </header><br>
+
+    <div class="container white-container">
+      <div class="tabs" role="tablist" aria-label="Main tabs">
+        <button class="tab" role="tab" onclick="location.href='index.html'"><sub><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-droplets" aria-hidden="true"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"></path><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"></path></svg></sub> Dashboard</button>
+        <button class="tab" onclick="location.href='schedule.html'"><sub><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg></sub> Schedule</button>
+        <button class="tab active"><sub><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg></sub> History</button>
+        <button class="tab" role="tab" onclick="location.href='settings.html'"><sub><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings" aria-hidden="true"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path><circle cx="12" cy="12" r="3"></circle></svg></sub> Settings</button>
+      </div>
+    </div><br>
+
+    <main>
+      <div class="panel" aria-label="history header">
+        <div>
+          <div class="heading">Moisture History</div>
+          <div class="small" style="margin-top:6px">Track your soil moisture over time</div>
+        </div>
+
+        <div class="range-controls" role="tablist" aria-label="time ranges">
+          <button class="range-btn active" data-range="24">24 Hours</button>
+          <button class="range-btn" data-range="7">7 Days</button>
+          <button class="range-btn" data-range="30">30 Days</button>
+        </div>
+      </div>
+
+      <div class="metrics-row" aria-hidden="false">
+        <div class="metric-card">
+          <div style="display:flex;align-items:center;justify-content:space-between">
+            <div class="metric-title">Watering Events</div>
+            <div style="opacity:.9" ><svg style="color:#1e6ef5;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-droplets text-blue-500" aria-hidden="true"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"></path><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"></path></svg></div>
+          </div>
+          <div class="metric-value" id="waterCount">0</div>
+          <div class="meta-small">times watered</div>
+        </div>
+
+        <div class="metric-card">
+          <div style="display:flex;align-items:center;justify-content:space-between">
+            <div class="metric-title">Average Moisture</div>
+            <div style="opacity:.9"><svg style="color: #10b981;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-droplets text-green-500" aria-hidden="true"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"></path><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"></path></svg></div>
+          </div>
+          <div class="metric-value" id="avgMoist">23.9%</div>
+          <div class="meta-small">mean level</div>
+        </div>
+
+        <div class="metric-card">
+          <div style="display:flex;align-items:center;justify-content:space-between">
+            <div class="metric-title">Trend</div>
+            <div style="opacity:.9"><svg style="color:#ef4444;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-down text-red-500" aria-hidden="true"><path d="M16 17h6v-6"></path><path d="m22 17-8.5-8.5-5 5L2 7"></path></svg></div>
+          </div>
+          <div class="metric-value" id="trendVal" style="color:var(--danger)">-29.0%</div>
+          <div class="meta-small">change</div>
+        </div>
+      </div>
+
+      <section class="chart-card" aria-label="moisture chart">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+          <div style="font-weight:700">Moisture Level Over Time</div>
+          <div style="font-size:13px;color:var(--muted)">Moisture %</div>
+        </div>
+
+        <div style="height:320px;margin-top:12px">
+          <canvas id="moistureChart" style="width:100%;height:100%"></canvas>
+        </div>
+
+        <div class="chart-legend" aria-hidden="true">
+          <div class="legend-item"><span class="legend-swatch" style="background:#ef4444"></span> Critical (below 30%)</div>
+          <div class="legend-item"><span class="legend-swatch" style="background:#f59e0b"></span> Low (30-50%)</div>
+          <div class="legend-item"><span class="legend-swatch" style="background:#10b981"></span> Good (50-70%)</div>
+          <div class="legend-item"><span class="legend-swatch" style="background:#1e6ef5"></span> Optimal (above 70%)</div>
+        </div>
+      </section>
+
+      <div class="recent-card">
+        <div style="font-weight:700;margin-bottom:8px">Recent Watering Events</div>
+        <div class="small" id="recentEvents">No recent events</div>
+      </div>
+
+      <div class="tips">
+        <strong>History Tips</strong>
+        <ul>
+          <li>Use 24h to inspect today's pattern</li>
+          <li>Use 7 days to find recurring drops</li>
+          <li>Use 30 days to check seasonal trends</li>
+        </ul>
+      </div>
+
+      <!-- optional: reference to uploaded screenshot for visual comparison -->
+      <div style="margin-top:18px;color:var(--muted);font-size:13px">
+       </div>
+
+    </main>
+  </div>
+
+  <script>
+    // Utility: generate sample timestamps and moisture values for 24h, 7d, 30d
+    function generate24Hours() {
+      const labels = [];
+      const data = [];
+      const now = new Date();
+      // produce 25 points (hourly for 24 hours)
+      for (let i = 24; i >= 0; i--) {
+        const d = new Date(now.getTime() - i * 60 * 60 * 1000);
+        const lbl = d.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'});
+        labels.push(lbl);
+      }
+      // sample moisture trending down then flat (demo)
+      for (let i = 0; i < labels.length; i++){
+        // start around 50% and decrease with some noise
+        const base = 50 - (i * 1.2);
+        data.push(Math.max(6, Math.round(base + (Math.random()*4 - 2))));
+      }
+      return {labels, data};
+    }
+
+    function generate7Days() {
+      const labels = [];
+      const data = [];
+      const now = new Date();
+      for (let i = 7; i >= 0; i--) {
+        const d = new Date(now.getTime() - i * 24 * 60 * 60 * 1000);
+        labels.push(d.toLocaleDateString());
+      }
+      for (let i = 0; i < labels.length; i++){
+        const base = 55 - (i * 2.5);
+        data.push(Math.max(8, Math.round(base + (Math.random()*6 - 3))));
+      }
+      return {labels, data};
+    }
+
+    function generate30Days() {
+      const labels = [];
+      const data = [];
+      const now = new Date();
+      for (let i = 30; i >= 0; i--) {
+        const d = new Date(now.getTime() - i * 24 * 60 * 60 * 1000);
+        // short label for space
+        labels.push((d.getMonth()+1) + '/' + d.getDate());
+      }
+      for (let i = 0; i < labels.length; i++){
+        const base = 58 - (i * 0.9);
+        data.push(Math.max(6, Math.round(base + (Math.random()*8 - 4))));
+      }
+      return {labels, data};
+    }
+
+    // setup Chart.js with gradient
+    const ctx = document.getElementById('moistureChart').getContext('2d');
+
+    function createGradient(ctx, area) {
+      const grad = ctx.createLinearGradient(0, area.bottom, 0, area.top);
+      grad.addColorStop(0, 'rgba(30,110,245,0.06)');
+      grad.addColorStop(0.4, 'rgba(30,110,245,0.18)');
+      grad.addColorStop(1, 'rgba(30,110,245,0.28)');
+      return grad;
+    }
+
+    // initial dataset (24 hours)
+    let currentRange = '24';
+    const data24 = generate24Hours();
+    const data7 = generate7Days();
+    const data30 = generate30Days();
+
+    let moistureChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: data24.labels,
+        datasets: [{
+          label: 'Moisture %',
+          data: data24.data,
+          fill: true,
+          tension: 0.35,
+          borderWidth: 2,
+          borderColor: '#1e6ef5',
+          pointRadius: 0,
+          backgroundColor: function(context) {
+            const chart = context.chart;
+            const {ctx, chartArea} = chart;
+            if (!chartArea) return '#cfe9ff';
+            return createGradient(ctx, chartArea);
+          }
+        }]
+      },
+      options: {
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: { mode: 'index', intersect: false }
+        },
+        scales: {
+          x: {
+            grid: { display: false, drawBorder: false },
+            ticks: { maxRotation: 0, autoSkip: true, maxTicksLimit: 10 }
+          },
+          y: {
+            beginAtZero: true,
+            max: 100,
+            ticks: { stepSize: 25 }
+          }
+        },
+        interaction: {
+          intersect: false,
+          mode: 'nearest'
+        }
+      }
+    });
+
+    // update function for range buttons
+    function updateChart(range) {
+      let src;
+      if (range === '24') src = data24;
+      else if (range === '7') src = data7;
+      else src = data30;
+
+      moistureChart.data.labels = src.labels;
+      moistureChart.data.datasets[0].data = src.data;
+      moistureChart.update();
+
+      // update metrics (demo calculations)
+      const avg = Math.round(src.data.reduce((a,b)=>a+b,0)/src.data.length * 10)/10;
+      document.getElementById('avgMoist').textContent = avg + '%';
+
+      // count watering events example: count values where moisture increased significantly
+      let events = 0;
+      for (let i = 1; i < src.data.length; i++){
+        if (src.data[i] - src.data[i-1] > 6) events++;
+      }
+      document.getElementById('waterCount').textContent = events;
+      const trend = Math.round(((src.data[src.data.length-1] - src.data[0]) / Math.max(1, src.data[0])) * 100);
+      const trendEl = document.getElementById('trendVal');
+      trendEl.textContent = (trend > 0 ? '+' : '') + trend + '%';
+      trendEl.style.color = trend < 0 ? 'var(--danger)' : 'var(--success)';
+    }
+
+    // wire range buttons
+    document.querySelectorAll('.range-btn').forEach(btn=>{
+      btn.addEventListener('click', (e)=>{
+        document.querySelectorAll('.range-btn').forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
+        const range = btn.dataset.range;
+        currentRange = range;
+        updateChart(range);
+      });
+    });
+
+    // initial metric calc
+    updateChart('24');
+
+    // Recent events demo content (replace with real events)
+    function renderRecentEvents() {
+      const recent = [];
+      // make some fake events based on waterCount
+      const waterCount = parseInt(document.getElementById('waterCount').textContent, 10);
+      if (waterCount === 0) {
+        document.getElementById('recentEvents').textContent = 'No recent events';
+        return;
+      }
+      for (let i=0;i<waterCount;i++){
+        recent.push(`Watered for ${Math.round(2 + Math.random()*5)} minutes — ${new Date(Date.now() - i*3600*1000).toLocaleString()}`);
+      }
+      document.getElementById('recentEvents').innerHTML = recent.join('<br>');
+    }
+
+    // update recent events whenever chart updates
+    const originalUpdate = moistureChart.update.bind(moistureChart);
+    moistureChart.update = function() {
+      originalUpdate();
+      renderRecentEvents();
+    };
+
+    // ensure chart gradient re-calculates on resize
+    window.addEventListener('resize', ()=>moistureChart.update());
+
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

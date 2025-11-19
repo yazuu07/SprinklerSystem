@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Watering System - Profile</title>
+  <link rel="stylesheet" href="styles/dashboard_styles.css">
+  <script src="script.js"></script>
+  <style >
+  
+     
+  </style>
+</head>
+<body class="fredoka">
+  <div class="container">
+    <!-- Header -->
+    <header class="top">
+      <div class="brand">
+        <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-droplets text-blue-500" aria-hidden="true"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"></path><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"></path></svg></div>
+        <div>
+          <div class="title">Smart Watering System</div>
+          <div class="welcome-text">Welcome back, User!</div>
+        </div>
+      </div>
+      <div class="actions">
+        <span class="profile"><sub><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></sub> Profile</span>
+        <div class="logout"><a href="login.html" style="color: red; text-decoration: none;"><sub><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-out" aria-hidden="true"><path d="m16 17 5-5-5-5"></path><path d="M21 12H9"></path><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path></svg></sub> Logout</a></div>
+      </div>
+    </header><br>
+
+    <!-- Tabs -->
+    <div class="container white-container">
+        <div class="tabs" role="tablist" aria-label="Main tabs">
+          <button class="tab active" role="tab" aria-selected="true"><sub><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-droplets" aria-hidden="true"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"></path><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"></path></svg></sub> Dashboard</button>
+          <button class="tab" onclick="location.href='schedule.html'"><sub><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg></sub> Schedule</button>
+          <button class="tab" onclick="location.href='history.html'"><sub><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg></sub> History</button>
+          <button class="tab" role="tab" onclick="location.href='settings.html'"><sub><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings" aria-hidden="true"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path><circle cx="12" cy="12" r="3"></circle></svg></sub> Settings</button>
+        </div>
+      </div><br>
+
+    <!-- Profile Section -->
+    <div class="white-container">
+      <h1 style="margin-bottom: 4px; font-size: 20px;">Account Profile</h1>
+      <p style="color: var(--muted); margin-top: 0; font-size: 14px;">Manage your account information</p>
+    </div>
+
+    <!-- Profile Card -->
+    <div class="white-container">
+      <div class="profile-header">
+        <div class="avatar"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div>
+        <div class="profile-info">
+          <h2>User Profile</h2>
+          <p>demo@example.com</p>
+        </div>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box email">
+          <div class="info-icon"><svg style="color: #1e6ef5;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail text-blue-500" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg></div>
+          <div class="info-content">
+            <h3>Email Address</h3>
+            <p>demo@example.com</p>
+          </div>
+        </div>
+        <div class="info-box member">
+          <div class="info-icon"><svg style="color: #10b981;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar text-green-500" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg></div>
+          <div class="info-content">
+            <h3>Member Since</h3>
+            <p>November 19, 2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Edit Form -->
+    <div class="white-container">
+      <div class="form-section">
+        <h3>Edit Profile</h3>
+        <div class="form-group">
+          <label>Display Name</label>
+          <input type="text" id="usernameInput" placeholder="Enter your name">
+        </div>
+        <button class="save-btn" onclick="saveProfile()">
+          <sub><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-save" aria-hidden="true"><path d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"></path><path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"></path><path d="M7 3v4a1 1 0 0 0 1 1h7"></path></svg></sub> Save Changes
+        </button>
+      </div>
+    </div>
+
+    <!-- Account Statistics -->
+    <div class="white-container">
+      <h3 style="margin-bottom: 4px; font-size: 16px; font-weight: 600;">Account Statistics</h3>
+      <div class="stats-grid">
+        <div class="stat-box blue">
+          <h4>Total Schedules</h4>
+          <div class="number">2</div>
+        </div>
+        <div class="stat-box green">
+          <h4>Watering Events</h4>
+          <div class="number">47</div>
+        </div>
+        <div class="stat-box purple">
+          <h4>Days Active</h4>
+          <div class="number">0</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Account Security -->
+    <div class="white-container">
+      <div class="security-box">
+        <h3>Account Security</h3>
+        <p>Your account data is stored locally in this browser. To sync across devices or add additional security features, connect to Supabase.</p>
+        <ul>
+          <li>Your password is stored securely</li>
+          <li>Session persists across browser refreshes</li>
+          <li>Data is private to your device</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

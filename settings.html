@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smart Watering — Settings</title>
+  <link rel="stylesheet" href="styles/dashboard_styles.css">
+
+</head>
+<body class="fredoka">
+  <div class="container">
+    <!-- Header -->
+    <header class="top" role="banner">
+        <div class="brand">
+          <div class="logo" aria-hidden>
+            <!-- droplet icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-droplets text-blue-500" aria-hidden="true"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"></path><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"></path></svg>
+          </div>
+          <div>
+            <div class="title">Smart Watering System</div>
+            <div class="welcome-text">Welcome back, User!</div>
+          </div>
+        </div>
+        <div class="actions">
+        <div class="profile"><a href="profile.html" style="text-decoration: none; color: #797473;" ><sub><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></sub> Profile</a></div>
+       <div class="logout"><a href="login.html" style="color: red; text-decoration: none;"><sub><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-out" aria-hidden="true"><path d="m16 17 5-5-5-5"></path><path d="M21 12H9"></path><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path></svg></sub> Logout</a></div>
+      </div>
+      </header><br>
+
+      <div class="container white-container">
+        <div class="tabs" role="tablist" aria-label="Main tabs">
+          <button class="tab" role="tab" onclick="location.href='index.html'"><sub><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-droplets" aria-hidden="true"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"></path><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"></path></svg></sub> Dashboard</button>
+          <button class="tab" onclick="location.href='schedule.html'"><sub><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg></sub> Schedule</button>
+          <button class="tab" onclick="location.href='history.html'"><sub><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg></sub> History</button>
+          <button class="tab active" role="tab"><sub><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings" aria-hidden="true"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path><circle cx="12" cy="12" r="3"></circle></svg></sub> Settings</button>
+        </div>
+      </div><br>
+
+    <!-- Title card -->
+    <div class="card xwide">
+      <h3 style="margin:0 0 6px 0">System Settings</h3>
+      <div class="small">Configure your watering system</div>
+    </div><br>
+
+    <!-- Moisture thresholds -->
+    <div class="card xwide" id="moistureCard">
+        <h4 style="margin-top:0"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-droplets text-blue-500" aria-hidden="true"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"></path><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"></path></svg></span> Moisture Thresholds</h4>
+      
+        <div class="form-row">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <label class="small" style="margin: 0;">Low Threshold (Start Watering)</label>
+            <div id="lowVal" style="font-weight: 600; color: #333;">33%</div>
+          </div>
+          <div style="position: relative; width: 100%; margin-bottom: 8px;">
+            <div style="position: absolute; top: 50%; transform: translateY(-50%); width: 100%; height: 6px; background: #e0e0e0; border-radius: 3px; pointer-events: none;">
+              <div id="lowProgress" style="height: 100%; background: #9b59b6; border-radius: 3px; width: 33%; transition: width 0.2s;"></div>
+            </div>
+            <input type="range" id="lowRange" min="0" max="100" value="33" style="width: 100%; position: relative; background: transparent;" />
+          </div>
+          <div class="note" style="margin: 0;">System will start watering when moisture drops below this level</div>
+        </div>
+      
+        <div class="form-row">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <label class="small" style="margin: 0;">High Threshold (Stop Watering)</label>
+            <div id="highVal" style="font-weight: 600; color: #333;">80%</div>
+          </div>
+          <div style="position: relative; width: 100%; margin-bottom: 8px;">
+            <div style="position: absolute; top: 50%; transform: translateY(-50%); width: 100%; height: 6px; background: #e0e0e0; border-radius: 3px; pointer-events: none;">
+              <div id="highProgress" style="height: 100%; background: #9b59b6; border-radius: 3px; width: 80%; transition: width 0.2s;"></div>
+            </div>
+            <input type="range" id="highRange" min="0" max="100" value="80" style="width: 100%; position: relative; background: transparent;" />
+          </div>
+          <div class="note" style="margin: 0;">System will stop watering when moisture reaches this level</div>
+        </div>
+      
+        <div class="form-row">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <label class="small" style="margin: 0;">Default Watering Duration (minutes)</label>
+            <div id="durVal" style="font-weight: 600; color: #333;">5 min</div>
+          </div>
+          <div style="position: relative; width: 100%; margin-bottom: 8px;">
+            <div style="position: absolute; top: 50%; transform: translateY(-50%); width: 100%; height: 6px; background: #e0e0e0; border-radius: 3px; pointer-events: none;">
+              <div id="durProgress" style="height: 100%; background: #9b59b6; border-radius: 3px; width: 8.33%; transition: width 0.2s;"></div>
+            </div>
+            <input type="range" id="durRange" min="1" max="60" value="5" style="width: 100%; position: relative; background: transparent;" />
+          </div>
+          <div class="note" style="margin: 0;">Maximum duration for each watering cycle</div>
+        </div>
+      </div><br>
+
+    <!-- Hardware connection -->
+    <div class="card xwide">
+      <h4><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wifi text-blue-500" aria-hidden="true"><path d="M12 20h.01"></path><path d="M2 8.82a15 15 0 0 1 20 0"></path><path d="M5 12.859a10 10 0 0 1 14 0"></path><path d="M8.5 16.429a5 5 0 0 1 7 0"></path></svg></span> Hardware Connection</h4>
+      <div class="form-row">
+        <label>API Endpoint</label><br>
+        <input id="apiEndpoint" class="input" placeholder="http://192.168.1.100:8080" />
+        <div class="note">The IP address and port of your C++ watering system</div>
+      </div>
+      <div class="form-row">
+        <label>WiFi SSID (for hardware setup)</label><br>
+        <input id="wifiSsid" class="input" placeholder="Your WiFi Network" />
+      </div>
+      <div class="form-row">
+        <label>WiFi Password</label><br>
+        <input id="wifiPass" class="input" type="password" placeholder="•••••••" />
+      </div>
+    </div><br>
+
+    <!-- Notifications -->
+    <div class="card xwide">
+      <h4><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bell text-blue-500" aria-hidden="true"><path d="M10.268 21a2 2 0 0 0 3.464 0"></path><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path></svg></span>Notifications</h4>
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div>
+          <div class="small" style="font-weight:600">Enable Notifications</div>
+          <div class="note">Get alerts when moisture is low or watering completes</div>
+        </div>
+        <label class="toggle" title="Enable notifications">
+          <input id="notifToggle" type="checkbox" />
+          <span class="knob"></span>
+        </label>
+      </div>
+    </div><br>
+
+    <!-- Save CTA -->
+
+      <div class="save-row">
+        <button id="saveBtn" class="save-btn"><sub><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-save" aria-hidden="true"><path d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"></path><path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"></path><path d="M7 3v4a1 1 0 0 0 1 1h7"></path></svg></sub> Save Settings</button>
+      </div>
+<br>
+
+    <!-- Integration guide -->
+    <div class="card xwide guide">
+      <h4>Core - Hardware Integration Guide</h4>
+      <ol>
+        <li>Configure hardware to connect to WiFi using credentials above.</li>
+        <li>Set up HTTP endpoints on your C++ system:
+          <ul>
+            <li><code>POST /api/moisture</code> - Receive sensor data</li>
+            <li><code>GET /api/commands</code> - Check for watering commands</li>
+            <li><code>POST /api/status</code> - Send system status updates</li>
+          </ul>
+        </li>
+        <li>Data format for moisture readings (JSON): <pre>{ "moisture": 45.2, "timestamp": 1657581200 }</pre></li>
+        <li>Expected command response example (JSON): <pre>{ "action": "water", "duration": 5 }</pre></li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- ===== JavaScript: small interactive logic (persist to localStorage + UI binding) ===== -->
+  <script>
+    (function(){
+      // Element refs
+      const lowRange = document.getElementById('lowRange');
+      const highRange = document.getElementById('highRange');
+      const durRange = document.getElementById('durRange');
+      const lowVal = document.getElementById('lowVal');
+      const highVal = document.getElementById('highVal');
+      const durVal = document.getElementById('durVal');
+
+      const progressLow = document.querySelector('#moistureCard .progress[data-target="lowProgress"] i') || document.querySelectorAll('.progress > i')[0];
+      const progressHigh = document.querySelectorAll('.progress > i')[1];
+      const progressDur = document.querySelectorAll('.progress > i')[2];
+
+      const apiEndpoint = document.getElementById('apiEndpoint');
+      const wifiSsid = document.getElementById('wifiSsid');
+      const wifiPass = document.getElementById('wifiPass');
+      const notifToggle = document.getElementById('notifToggle');
+      const saveBtn = document.getElementById('saveBtn');
+
+      // Keep progress widths in sync with ranges
+      function updateRangeUI() {
+        const low = Number(lowRange.value);
+        const high = Number(highRange.value);
+        const dur = Number(durRange.value);
+
+        lowVal.textContent = low + '%';
+        highVal.textContent = high + '%';
+        durVal.textContent = dur + ' min';
+
+        if (progressLow) progressLow.style.width = low + '%';
+        if (progressHigh) progressHigh.style.width = high + '%';
+        if (progressDur) progressDur.style.width = Math.min((dur/60)*100, 100) + '%';
+      }
+
+      // Basic validation to keep low < high
+      function clampThresholds() {
+        let low = Number(lowRange.value);
+        let high = Number(highRange.value);
+        if (low >= high) {
+          // keep a minimal gap of 1
+          if (this === lowRange) high = Math.min(low + 1, 100), highRange.value = high;
+          else low = Math.max(high - 1, 0), lowRange.value = low;
+        }
+      }
+
+      // Save/load to localStorage
+      function saveSettings() {
+        const cfg = {
+          lowThreshold: Number(lowRange.value),
+          highThreshold: Number(highRange.value),
+          defaultDuration: Number(durRange.value),
+          apiEndpoint: apiEndpoint.value || '',
+          wifiSsid: wifiSsid.value || '',
+          wifiPass: wifiPass.value || '',
+          notifications: notifToggle.checked
+        };
+        localStorage.setItem('smartWaterCfg', JSON.stringify(cfg));
+        saveBtn.textContent = 'Saved';
+        setTimeout(()=> saveBtn.textContent = 'Save Settings', 1500);
+      }
+
+      function loadSettings() {
+        const raw = localStorage.getItem('smartWaterCfg');
+        if (!raw) return;
+        try {
+          const cfg = JSON.parse(raw);
+          if (typeof cfg.lowThreshold === 'number') lowRange.value = cfg.lowThreshold;
+          if (typeof cfg.highThreshold === 'number') highRange.value = cfg.highThreshold;
+          if (typeof cfg.defaultDuration === 'number') durRange.value = cfg.defaultDuration;
+          if (cfg.apiEndpoint) apiEndpoint.value = cfg.apiEndpoint;
+          if (cfg.wifiSsid) wifiSsid.value = cfg.wifiSsid;
+          if (cfg.wifiPass) wifiPass.value = cfg.wifiPass;
+          notifToggle.checked = !!cfg.notifications;
+        } catch(e){ console.warn('Failed to parse settings', e); }
+      }
+
+      // Attach events
+      [lowRange, highRange, durRange].forEach(el=>{
+        el.addEventListener('input', updateRangeUI);
+        el.addEventListener('change', clampThresholds);
+      });
+
+      saveBtn.addEventListener('click', saveSettings);
+
+      // enable Ctrl+S to save
+      window.addEventListener('keydown', (e)=>{
+        if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') {
+          e.preventDefault(); saveSettings();
+        }
+      });
+
+      // init
+      loadSettings();
+      updateRangeUI();
+
+      // Demo: small helper to "test" endpoint (non-blocking)
+      function testApiEndpoint() {
+        const url = apiEndpoint.value;
+        if (!url) return;
+        // Try a lightweight fetch to URL/health if available (wrapped so failing hosts don't break)
+        try {
+          fetch(url, { method: 'GET' , mode: 'no-cors'}).catch(()=>{ /* ignore CORS/connection errors in demo */ });
+        } catch(_) {}
+      }
+      apiEndpoint.addEventListener('change', testApiEndpoint);
+
+      // small accessibility: when toggling notifications, brief label update
+      notifToggle.addEventListener('change', ()=> {
+        // no visual text to change, but we persist on save
+      });
+
+    })();
+  </script>
+  
+</body>
+<script src="script.js"></script>
+</html>
